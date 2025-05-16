@@ -1,0 +1,47 @@
+header {
+    background-color: #000;
+    display: flex;
+    padding: 30px;
+    color: aliceblue;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #28a745; 
+}
+
+.fa-tree {
+    color: green;
+}
+
+aside {
+    width: 20em;
+    margin: 1em;
+    padding: 1em;
+    color: #333;
+    text-align: center;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    background-color: azure;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1em;
+    border-top: 1px solid #000;
+}
