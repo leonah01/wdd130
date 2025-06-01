@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>White Water Rafting</title>
   <script src="https://kit.fontawesome.com/41edc9108f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/Rafting.css" />
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="top-bar">
       <img src="./images/logo.jpeg" alt="Rapids Logo" class="logo" />
       <nav class="navbar">
-        <a href="#">Home</a>
+        <a href="./index.html">Home</a>
         <a href="./AboutUs.html">About Us</a>
-        <a href="#">Trips</a>
-        <a href="#">Contact Us</a>
+        <a href="./trips.html">Trips</a>
+        <a href="./contact.html">Contact Us</a>
       </nav>
     </div>
   </header>
@@ -23,9 +27,10 @@
   <section class="hero">
     <div class="hero-overlay">
       <h1>WHITE WATER RAFTING</h1>
+      <br><br>
       <div class="info-box">
         <p>
-          Welcome to our About Us page! We're thrilled to have you here as you explore what makes our adventures truly special. Whether you're seeking excitement or a peaceful escape, you're in the right place. Get ready to discover unforgettable experiences and create lasting memories with us!</a>
+          Welcome to our About Us page! We're thrilled to have you here as you explore what makes our adventures truly special. Whether you're seeking excitement or a peaceful escape, you're in the right place. Get ready to discover unforgettable experiences and create lasting memories with us!
         </p>
         <img src="./images/raft1.jpg" alt="Rafting Group" />
       </div>
@@ -35,55 +40,60 @@
   <main>
     <section class="history">
       <h2>HISTORY</h2>
-      <p>
+      <div class="history-content">
+        <p>
         This company was founded by two siblings, a brother and a sister, Sam and Sarah that loved waters. They enjoyed 
          the beautiful views they used to see. This inspired them to start this company to let others see what they are
-        missing. We only accept ages from 16 years and above. we operate all day long from 8:30am to 5:30pm. Come and
+        missing. We only accept ages from 16 years and above.</p>
+
+        <img src="./images/raft8.jpg" alt="Founders">
+  
+        <p>we operate all day long from 8:30am to 5:30pm. Come and
         enjoy with us, bring your family and friends. If you have any issues that you need to be addresed feel free to 
         share a comment on our facebook, twitter and instagram account. Please dont forget to like and share our pages.
-      </p>
+        </p>
+      </div>
     </section>
 
     <section class="adventure">
         <h2>ADVENTURE AWAITS YOU</h2>
-        
-        <div class="adventure-img">
-            <img src="./images/raft6.jpg" alt="Kayaking calm waters" />
-        </div>
+        <div class="adventure-gallery">
+          <figure class="adventure-img">
+              <img src="./images/raft1.jpg" alt="Peaceful rapids" />
+              <figcaption>Peaceful rapids</figcaption>
+          </figure>
 
-        <div class="adventure-img">
-            <img src="./images/raft1.jpg" alt="Peaceful rapids" />
-            <p>Peaceful rapids</p>
-        </div>
+          <figure class="adventure-img">
+              <img src="./images/raft2.jpg" alt="Peaceful rapids" />
+              <figcaption>Extreme rapids</figcaption>
+          </figure>
 
-        <div class="adventure-img">
-            <img src="./images/raft2.jpg" alt="Peaceful rapids" />
-            <p>Extreme rapids</p>
-        </div>
+          <figure class="adventure-img">
+              <img src="./images/raft6.jpg" alt="Peaceful rapids" />
+              <figcaption>Calm rapids</figcaption>
+          </figure>
 
-        <div class="adventure-img">
-            <img src="./images/raft4.jpg" alt="Peaceful rapids" />
-            <p>Calm rapids</p>
-        </div>
+          <figure class="adventure-img">
+              <img src="./images/raft5.jpg" alt="Peaceful rapids" />
+              <figcaption>bumpy rapids</figcaption>
+          </figure>
 
-        <div class="adventure-img">
-            <img src="./images/raft5.jpg" alt="Peaceful rapids" />
-            <p>bumpy rapids</p>
-        </div>
-
-        <div class="adventure-img">
-            <img src="./images/raft3.jpg" alt="Peaceful rapids" />
-            <p>Wild rapids</p>
-        </div>
+          <figure class="adventure-img">
+              <img src="./images/raft3.jpg" alt="Peaceful rapids" />
+              <figcaption>Wild rapids</figcaption>
+          </figure>
+        </div>  
     </section>
   </main>
   <footer class="footer">
-  <div class="social-icons">
-    <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
-    <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
-    <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
-  </div>
-  <p class="footer-text">© 2025 Rutendo Dongo. All rights reserved.</p>
-</footer>
+    <div class="footer-container">
+      <p class="footer-text">© 2025 Rutendo Dongo. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>    
+  </footer>
 </body>
 </html>
