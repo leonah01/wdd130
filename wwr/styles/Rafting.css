@@ -1,7 +1,5 @@
 /* rafting.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&family=Rock+Salt&display=swap');
-
 /* ===== UPDATED COLOR PALETTE ===== */
 :root {
   --primary: #00171f;     /* Rich Black */
@@ -9,20 +7,14 @@
   --accent1: #00a8e8;     /* Picton Blue */
   --accent2: #ffd93d;     /* Bright Yellow */
   --light: #ffffff;       /* Pure White */
-   --font-primary: 'MyFont', sans-serif;
-   text-rendering: auto;       
-  text-rendering: optimizeSpeed;
-  text-rendering: optimizeLegibility;
-  text-rendering: geometricPrecision;
-
 }
 
 /* ===== GLOBAL RESET ===== */
 body {
   margin: 0;
   padding: 0;
-  text-rendering: optimizeLegibility;
-  font-family: var(--font-primary);
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ===== HEADER ===== */
