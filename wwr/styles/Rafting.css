@@ -10,12 +10,19 @@
   --accent2: #ffd93d;     /* Bright Yellow */
   --light: #ffffff;       /* Pure White */
    --font-primary: 'MyFont', sans-serif;
+   text-rendering: auto;       
+  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+
 }
 
 /* ===== GLOBAL RESET ===== */
 body {
   margin: 0;
   padding: 0;
+  text-rendering: optimizeLegibility;
+  font-family: var(--font-primary);
 }
 
 /* ===== HEADER ===== */
@@ -206,4 +213,215 @@ body {
 
 .icon:hover {
   color: var(--accent2);
+}
+
+/* Contact Page Specific Styles */
+/* ===================== */
+/* CONTACT PAGE STYLING  */
+/* ===================== */
+
+
+/* body {
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+  background-color: var(--light);
+  color: var(--primary);
+} */
+
+/* Hero Section */
+.hero1 {
+  background: url('../images/raft4.jpg') no-repeat center center/cover;
+  height: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.hero-overlay1 h1 {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--accent2); /* Yellow text on dark overlay */
+  padding: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0; /* Remove bottom margin that may cause gap */
+  border-radius: 8px;
+}
+
+.info-box1 p {
+  color: #000000;
+  font-size: 1.4rem;
+  background-color:#ffffff;
+}
+
+/* Layout for company info and map side-by-side */
+.info-map-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.info-block {
+  flex: 1  500px;
+}
+
+.map-container {
+  flex: 1 1 800px;
+  max-width: 600px;
+}
+
+.google-map {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* contact */
+.contact-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 2rem;
+}
+
+
+/* Employee Profiles */
+.employee-profiles h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.employees {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.employees figure {
+  text-align: center;
+  width: 150px;
+}
+
+.employees img {
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employees figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #f0f6fa;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.contact-form h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form p {
+  text-align: center;
+  color: #555;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: var(--font-primary);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.radio-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.submit-button {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  margin: 1.5rem auto 0;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: var(--secondary);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--accent2);
+  text-decoration: none;
+}
+
+.footer .social-icons {
+  margin-top: 0.5rem;
+}
+
+.footer .icon {
+  margin: 0 0.5rem;
+  color: var(--light);
+  font-size: 1.2rem;
 }

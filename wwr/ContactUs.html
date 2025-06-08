@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>White Water Rafting</title>
+  <script src="https://kit.fontawesome.com/41edc9108f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/Rafting.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <img src="./images/logo.jpeg" alt="Rapids Logo" class="logo" />
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="./AboutUs.html">About Us</a>
+                <a href="./trips.html">Trips</a>
+                <a href="./ContactUs.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero1">
+            <div class="hero-overlay1">
+                <h1>Contact White Water Rafting Adventures</h1>
+                <br><br>
+                <div class="info-box1">
+                    <p>
+                    We'd love to hear from you! Reach out with questions, feedback, or to plan your next adventure.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-container">
+            <section class="company-info">
+                <h2>Our Information</h2>
+                <div class="info-map-wrapper">
+                    <div class="info-block">
+                        <address>
+                        <p><strong>Address:</strong> 123 River Road, Victoria Falls, Zimbabwe</p>
+                        <p><strong>Phone:</strong> (555) 123-4567</p>
+                        <p><strong>Email:</strong> info@wwrafting.com</p>
+                        </address>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-123.45678901234567!3d45.67890123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDQwJzQ0LjAiTiAxMjPCsDI3JzM2LjAiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="google-map">
+                        </iframe>
+                    </div>
+                </div>
+             </section>
+    </div>
+
+    <section class="employee-profiles">
+        <h2>Meet Our Team</h2>
+        <div class="employees">
+            <figure>
+                <img src="./images/sarah.jpg" alt="Sarah Johnson, Adventure Guide">
+                <figcaption>Sarah Johnson<br>Adventure Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/mike.jpg" alt="Mike Rodriguez, Safety Coordinator">
+                <figcaption>Mike Rodriguez<br>Safety Coordinator</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/ermy.jpg" alt="Emily Chen, Customer Experience Manager">
+                <figcaption>Emily Chen<br>Customer Experience Manager</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="process_contact.php" method="post">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Purpose of Message:</label>
+                <div class="radio-options">
+                    <label>
+                        <input type="radio" name="purpose" value="general" checked>
+                        General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </div>
+            </div>
+                
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+                
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="newsletter" value="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">© 2025 Rutendo Dongo. All rights reserved.</p>
+            <p><a href="https://app.moqups.com/dv3rcsvjIvQtbrlTGdEy0q1cZ8wxkAHI/view/page/ad12de680">View Contact Page Wireframe</a></p>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>    
+    </footer>
+</body>
+</html>
