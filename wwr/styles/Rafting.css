@@ -25,25 +25,34 @@ body {
 }
 
 .top-bar {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
+  gap: 2rem;
 }
 
 .logo {
-  height: 60px;
+  width: 60px;
+  height: auto;
 }
 
-.navbar a, .footer a {
-  color: var(--light);
-  margin: 0 1rem;
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 .navbar a:hover {
-  text-decoration: underline;
+  color: var(--accent2); 
 }
+
 
 .hero, .hero1 {
   height: 400px;
